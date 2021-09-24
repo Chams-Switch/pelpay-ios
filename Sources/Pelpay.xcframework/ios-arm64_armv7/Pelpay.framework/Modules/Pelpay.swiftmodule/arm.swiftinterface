@@ -1,0 +1,200 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pelpay
+import Foundation
+@_exported import Pelpay
+import Swift
+import UIKit
+import WebKit
+extension String {
+  public var urlEncoded: Swift.String? {
+    get
+  }
+  public func isValidCardNumber() -> Swift.Bool
+  public func isValidCvv() -> Swift.Bool
+  public func isValidAccountNumber() -> Swift.Bool
+  public func isValidPin() -> Swift.Bool
+  public func isValidExpiry() -> Swift.Bool
+  public func cardType() -> Pelpay.SwiftLuhn.CardType?
+  public func suggestedCardType() -> Pelpay.SwiftLuhn.CardType?
+  public func formattedCardNumber() -> Swift.String
+}
+public struct JMStringMask : Swift.Equatable {
+  public init(mask: Swift.String)
+  public static func == (lhs: Pelpay.JMStringMask, rhs: Pelpay.JMStringMask) -> Swift.Bool
+  public func mask(string: Swift.String?) -> Swift.String?
+  public func unmask(string: Swift.String?) -> Swift.String?
+}
+public struct CreateAdviceRequest : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public typealias Transaction = Pelpay.CreateAdviceRequest
+@_hasMissingDesignatedInitializers open class SwiftLuhn {
+  public enum CardType : Swift.Int {
+    case amex
+    case visa
+    case mastercard
+    case discover
+    case dinersClub
+    case jcb
+    case maestro
+    case rupay
+    case verve
+    case mir
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CardError : Swift.Error {
+    case unsupported
+    case invalid
+    public static func == (a: Pelpay.SwiftLuhn.CardError, b: Pelpay.SwiftLuhn.CardError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+extension SwiftLuhn.CardType {
+  public func stringValue() -> Swift.String
+  public init?(string: Swift.String)
+}
+open class BottomSheetViewController<Content, BottomSheet> : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate where Content : UIKit.UIViewController, BottomSheet : UIKit.UIViewController {
+  public init(contentViewController: Content, bottomSheetViewController: BottomSheet, bottomSheetConfiguration: Pelpay.BottomSheetViewController<Content, BottomSheet>.BottomSheetConfiguration)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public func showBottomSheet(animated: Swift.Bool = true)
+  public func hideBottomSheet(animated: Swift.Bool = true)
+  public struct BottomSheetConfiguration {
+  }
+  public enum BottomSheetState {
+    case initial
+    case full
+    public static func == (a: Pelpay.BottomSheetViewController<Content, BottomSheet>.BottomSheetState, b: Pelpay.BottomSheetViewController<Content, BottomSheet>.BottomSheetState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+extension UIViewController : UIKit.UIPopoverPresentationControllerDelegate {
+}
+@objc @_inheritsConvenienceInitializers public class CallbackWebViewController : UIKit.UIViewController {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CallbackWebViewController : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+}
+public enum Environment {
+  case Staging
+  case Production
+  public static func == (a: Pelpay.Environment, b: Pelpay.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class CustomWebView : UIKit.UIViewController {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CustomWebView : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+}
+public enum PaymentChannel {
+  case Card
+  case Bank
+  case BankTransfer
+  public static func == (a: Pelpay.PaymentChannel, b: Pelpay.PaymentChannel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RequestType : Swift.String {
+  case GET, POST, DELETE, PUSH
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class JMMaskTextField : UIKit.UITextField {
+  public var stringMask: Pelpay.JMStringMask? {
+    get
+  }
+  public func setOnTextChanged(onTextChanged: @escaping (Swift.String) -> ())
+  @objc override weak dynamic open var delegate: UIKit.UITextFieldDelegate? {
+    @objc get
+    @objc set(newValue)
+  }
+  public var unmaskedText: Swift.String? {
+    get
+  }
+  @objc @IBInspectable open var maskString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @objc deinit
+}
+extension JMMaskTextField : UIKit.UITextFieldDelegate {
+  @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @objc dynamic public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @objc dynamic public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class PelpaySdk {
+  public static let shared: Pelpay.PelpaySdk
+  @discardableResult
+  public func setBrandPrimaryColor(color: UIKit.UIColor) -> Self
+  @discardableResult
+  public func setHidePelpayLogo(isHidden: Swift.Bool) -> Self
+  @discardableResult
+  public func initialise(withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  @discardableResult
+  public func initialiseWithExistingAdvice(withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  @objc deinit
+}
+public enum PelpaySDKException : Foundation.LocalizedError {
+  case APIException(message: Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension Pelpay.SwiftLuhn.CardType : Swift.Equatable {}
+extension Pelpay.SwiftLuhn.CardType : Swift.Hashable {}
+extension Pelpay.SwiftLuhn.CardType : Swift.RawRepresentable {}
+extension Pelpay.SwiftLuhn.CardError : Swift.Equatable {}
+extension Pelpay.SwiftLuhn.CardError : Swift.Hashable {}
+extension Pelpay.BottomSheetViewController.BottomSheetState : Swift.Equatable {}
+extension Pelpay.BottomSheetViewController.BottomSheetState : Swift.Hashable {}
+extension Pelpay.Environment : Swift.Equatable {}
+extension Pelpay.Environment : Swift.Hashable {}
+extension Pelpay.PaymentChannel : Swift.Equatable {}
+extension Pelpay.PaymentChannel : Swift.Hashable {}
+extension Pelpay.RequestType : Swift.Equatable {}
+extension Pelpay.RequestType : Swift.Hashable {}
+extension Pelpay.RequestType : Swift.RawRepresentable {}
