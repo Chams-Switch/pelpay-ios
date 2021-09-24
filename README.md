@@ -9,17 +9,7 @@ Welcome to Pelpay's iOS SDK. This library will help you accept card and alternat
 - Cocopods
 - Swift Package Manager
 ### Install and Configure the SDK
-1. Add it in your root build.gradle at the end of repositories:
-
-```
-allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-```
-2. Add the dependency (Cocopods)
+1. Add the dependency (Cocopods)
 ```
 target 'MyApp' do
   pod 'Pelpay'
