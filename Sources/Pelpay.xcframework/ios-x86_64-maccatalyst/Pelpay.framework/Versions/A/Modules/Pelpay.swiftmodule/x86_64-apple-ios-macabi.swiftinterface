@@ -26,6 +26,10 @@ public struct JMStringMask : Swift.Equatable {
   public func unmask(string: Swift.String?) -> Swift.String?
 }
 public struct CreateAdviceRequest : Swift.Codable {
+  public struct Customer : Swift.Codable {
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -128,6 +132,10 @@ public enum PaymentChannel {
     get
   }
 }
+public protocol PelpaySdkCallback {
+  func onPaymentSuccess(adviceReference: Swift.String?)
+  func onPaymentError(errorMessage: Swift.String?)
+}
 public enum RequestType : Swift.String {
   case GET, POST, DELETE, PUSH
   public init?(rawValue: Swift.String)
@@ -176,6 +184,7 @@ extension JMMaskTextField : UIKit.UITextFieldDelegate {
   public func initialise(withEnvironment environment: Pelpay.Environment, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
   @discardableResult
   public func initialiseWithExistingAdvice(withEnvironment environment: Pelpay.Environment, withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  public func withCallBack(callback: Pelpay.PelpaySdkCallback)
   @objc deinit
 }
 public enum PelpaySDKException : Foundation.LocalizedError {

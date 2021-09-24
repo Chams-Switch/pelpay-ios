@@ -16,6 +16,14 @@ target 'MyApp' do
 end
 
 ```
+1. Add dependency (Swift Package Manager)
+
+Select **File** → **Swift Packages** → **Add Package Dependency**…. Paste the Git Repository URL: **https://github.com/Chams-Switch/pelpay-ios.git**. The click **Next**.
+
+Depending on your GitHub settings, you may need to authenticate your SSH key here. Then, under Rules, make sure Up to Next Major is selected for the version 1.0.1. Click Next.
+
+If you want to learn more about major and minor versioning check out semver.org. After Xcode fetches the package, ensure the Pelpay product is selected and added to the project target target. Then select Finish.
+
 ### Configure your Pelpay integration
 **Step 1**: Configure Client ID, Client Secret & Integration Key
 After installation of the Pelpay SDK, configure it with your Client ID, Client Secret & Integration Key gotten from your merchant dashboard, for both test and production
@@ -23,6 +31,7 @@ After installation of the Pelpay SDK, configure it with your Client ID, Client S
 #### Sample Integration (Swift)
 ```swift
 import UIKit
+import Pelpay
 
 class ViewController: UIViewController, PelpaySdkCallback {
     
