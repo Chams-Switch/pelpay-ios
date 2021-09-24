@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		lPPXIhmSug5DRMWu3fN3S+4Gsh0=
+		XyyzlASMFgkXaQTbmRCqDo5U8o4=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
@@ -40,14 +40,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsgGlK1l2qfaVPVyVvkiXJxCqqBqgpsA/cYQ2UIwub8=
+			48MUnZAHkP0RhRv0h5IDuYKhGNv++LU4O2sIsW+iHmI=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rAen1RE6MAEqye4L+KyU/E2Gg0cZRWdJ61IdQN5THTM=
+			V1g8Bvrw0fZ2e6bMueh8x6lxEfUWJg0an1Qm86FMUYU=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftdoc</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsgGlK1l2qfaVPVyVvkiXJxCqqBqgpsA/cYQ2UIwub8=
+			48MUnZAHkP0RhRv0h5IDuYKhGNv++LU4O2sIsW+iHmI=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rAen1RE6MAEqye4L+KyU/E2Gg0cZRWdJ61IdQN5THTM=
+			V1g8Bvrw0fZ2e6bMueh8x6lxEfUWJg0an1Qm86FMUYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XtNYxDifjWdl1uD2L5P9hynyDHCE6Xj34sKuLuOC2js=
+			vNHBQ0gP4DbbY1zn7UWALm2REiiCTo5ybNaFEyN8d0I=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>

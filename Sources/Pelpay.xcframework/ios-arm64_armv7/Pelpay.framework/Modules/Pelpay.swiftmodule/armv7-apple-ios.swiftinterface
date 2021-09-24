@@ -173,9 +173,9 @@ extension JMMaskTextField : UIKit.UITextFieldDelegate {
   @discardableResult
   public func setHidePelpayLogo(isHidden: Swift.Bool) -> Self
   @discardableResult
-  public func initialise(withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  public func initialise(withEnvironment environment: Pelpay.Environment, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
   @discardableResult
-  public func initialiseWithExistingAdvice(withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  public func initialiseWithExistingAdvice(withEnvironment environment: Pelpay.Environment, withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
   @objc deinit
 }
 public enum PelpaySDKException : Foundation.LocalizedError {
