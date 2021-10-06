@@ -1,0 +1,11 @@
+framework module Pelpay {
+  umbrella header "Pelpay.h"
+
+  export *
+  module * { export * }
+}
+
+module Pelpay.Swift {
+    header "Pelpay-Swift.h"
+    requires objc
+}

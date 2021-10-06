@@ -42,34 +42,19 @@ class ViewController: UIViewController, PelpaySdkCallback {
     
     @IBAction func onTapTest(_ sender: Any) {
         
+          //1. Set the Transaction, each field is important and must not be nil
+        PelpaySdk.shared.setTransaction(integrationKey: "INTEGRATION_KEY_FROM_MERCHANT_DASHBOARD", amount: 50, currency: "NGN", merchantReference: UUID().uuidString, narration: "Narration", callackUrl: "http://localhost.com", productCode: "SSD", splitCode: "", shouldTokenise: false)
+        
+        //2. Set the Customer, each field is important and must not be nil
+        PelpaySdk.shared.setCustomer(customerID: "xxx", customerLastName: "olajuwon", customerFirstName: "adeoye", customerEmail: "olajuwon@yopmail.com", customerPhoneNumber: "07039544295", customerAddress: "16 Egbeda Road", customerCity: "Lagos", customerStateCode: "LA", customerPostalCode: "12345", customerCountryCode: "NG")
+        
+        
+        //3. Initialize the SDK
         PelpaySdk.shared.initialise(
             withEnvironment: Environment.Staging,
             withClientId: "CLIENT_ID_FROM_MERCHANT_DASHBOARD",
             withClientSecret: "CLIENT_SECRET_FROM_MERCHANT_DASHBOARD",
-            withIntegrationKey: "INTEGRATION_KEY_FROM_MERCHANT_DASHBOARD",
-            withController: self,
-            withTransaction:
-                Transaction(amount: 50,
-                            currency: "NGN",
-                            merchantRef: "UNIQUE_GENERATED_VALUE",
-                            narration: "Narration",
-                            callBackURL: "http://localhost.com",
-                            productCode: "SSD",
-                            splitCode: "",
-                            shouldTokenize: false,
-                            customer:
-                                Transaction.Customer(
-                                    customerID: "xxx",
-                                    customerLastName: "olajuwon",
-                                    customerFirstName: "adeoye",
-                                    customerEmail: "olajuwon@yopmail.com",
-                                    customerPhoneNumber: "07039544295",
-                                    customerAddress: "16 Egbeda Road",
-                                    customerCity: "Lagos",
-                                    customerStateCode: "LA",
-                                    customerPostalCode: "12345",
-                                    customerCountryCode: "NG"),
-                            integrationKey: "a6ccab0e-157d-4fb7-b15d-ddb7cd149153")).setBrandPrimaryColor(color: UIColor.darkGray).setHidePelpayLogo(isHidden: true).withCallBack(callback: self)
+            withController: self).setBrandPrimaryColor(color: UIColor.darkGray).setHidePelpayLogo(isHidden: false).withCallBack(callback: self)
     }
     
     
@@ -86,6 +71,13 @@ class ViewController: UIViewController, PelpaySdkCallback {
 
 ```
 ---
+
+##### Optional (You can add a merchant logo)
+To do this, after the `.setHidePelpayLogo(isHidden: false)` call:
+
+```swift
+            .setMerchantLogo(merchantLogo: UIImage)
+```
 
 **Note** : Ensure when going live, you change the implementation from Staging `Environment.Staging` to production `Environment.Production`. 
 Also ensure you don't use staging credentials on production

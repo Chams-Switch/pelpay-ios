@@ -1,12 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pelpay
 import Foundation
 @_exported import Pelpay
 import Swift
 import UIKit
 import WebKit
-extension String {
+import _Concurrency
+extension Swift.String {
   public var urlEncoded: Swift.String? {
     get
   }
@@ -63,15 +64,15 @@ public typealias Transaction = Pelpay.CreateAdviceRequest
   }
   @objc deinit
 }
-extension SwiftLuhn.CardType {
+extension Pelpay.SwiftLuhn.CardType {
   public func stringValue() -> Swift.String
   public init?(string: Swift.String)
 }
-open class BottomSheetViewController<Content, BottomSheet> : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate where Content : UIKit.UIViewController, BottomSheet : UIKit.UIViewController {
-  public init(contentViewController: Content, bottomSheetViewController: BottomSheet, bottomSheetConfiguration: Pelpay.BottomSheetViewController<Content, BottomSheet>.BottomSheetConfiguration)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  public func showBottomSheet(animated: Swift.Bool = true)
-  public func hideBottomSheet(animated: Swift.Bool = true)
+@_Concurrency.MainActor(unsafe) open class BottomSheetViewController<Content, BottomSheet> : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate where Content : UIKit.UIViewController, BottomSheet : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public init(contentViewController: Content, bottomSheetViewController: BottomSheet, bottomSheetConfiguration: Pelpay.BottomSheetViewController<Content, BottomSheet>.BottomSheetConfiguration)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func showBottomSheet(animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func hideBottomSheet(animated: Swift.Bool = true)
   public struct BottomSheetConfiguration {
   }
   public enum BottomSheetState {
@@ -83,23 +84,22 @@ open class BottomSheetViewController<Content, BottomSheet> : UIKit.UIViewControl
       get
     }
   }
-  @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @objc deinit
 }
-extension UIViewController : UIKit.UIPopoverPresentationControllerDelegate {
+extension UIKit.UIViewController : UIKit.UIPopoverPresentationControllerDelegate {
 }
-@objc @_inheritsConvenienceInitializers public class CallbackWebViewController : UIKit.UIViewController {
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CallbackWebViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension CallbackWebViewController : WebKit.WKNavigationDelegate {
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+extension Pelpay.CallbackWebViewController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 public enum Environment {
   case Staging
@@ -110,17 +110,17 @@ public enum Environment {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class CustomWebView : UIKit.UIViewController {
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CustomWebView : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension CustomWebView : WebKit.WKNavigationDelegate {
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+extension Pelpay.CustomWebView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 public enum PaymentChannel {
   case Card
@@ -144,46 +144,50 @@ public enum RequestType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers open class JMMaskTextField : UIKit.UITextField {
-  public var stringMask: Pelpay.JMStringMask? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class JMMaskTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public var stringMask: Pelpay.JMStringMask? {
     get
   }
-  public func setOnTextChanged(onTextChanged: @escaping (Swift.String) -> ())
-  @objc override weak dynamic open var delegate: UIKit.UITextFieldDelegate? {
-    @objc get
-    @objc set(newValue)
+  @_Concurrency.MainActor(unsafe) public func setOnTextChanged(onTextChanged: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) @objc override weak dynamic open var delegate: UIKit.UITextFieldDelegate? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set(newValue)
   }
-  public var unmaskedText: Swift.String? {
+  @_Concurrency.MainActor(unsafe) public var unmaskedText: Swift.String? {
     get
   }
-  @objc @IBInspectable open var maskString: Swift.String? {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var maskString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic open func awakeFromNib()
   @objc deinit
 }
-extension JMMaskTextField : UIKit.UITextFieldDelegate {
-  @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
-  @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
-  @objc dynamic public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
-  @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
-  @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
-  @objc dynamic public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
-  @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+extension Pelpay.JMMaskTextField : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class PelpaySdk {
   public static let shared: Pelpay.PelpaySdk
   @discardableResult
   public func setBrandPrimaryColor(color: UIKit.UIColor) -> Self
   @discardableResult
+  public func setMerchantLogo(merchantLogo: UIKit.UIImage) -> Self
+  @discardableResult
   public func setHidePelpayLogo(isHidden: Swift.Bool) -> Self
+  public func setTransaction(integrationKey: Swift.String, amount: Swift.Int?, currency: Swift.String?, merchantReference: Swift.String?, narration: Swift.String?, callackUrl: Swift.String?, productCode: Swift.String?, splitCode: Swift.String?, shouldTokenise: Swift.Bool?)
+  public func setCustomer(customerID: Swift.String, customerLastName: Swift.String, customerFirstName: Swift.String, customerEmail: Swift.String, customerPhoneNumber: Swift.String, customerAddress: Swift.String, customerCity: Swift.String, customerStateCode: Swift.String, customerPostalCode: Swift.String, customerCountryCode: Swift.String)
   @discardableResult
-  public func initialise(withEnvironment environment: Pelpay.Environment, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  public func initialise(withEnvironment environment: Pelpay.Environment, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withController rootController: UIKit.UIViewController) -> Self
   @discardableResult
-  public func initialiseWithExistingAdvice(withEnvironment environment: Pelpay.Environment, withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withIntegrationKey integrationKey: Swift.String, withController rootController: UIKit.UIViewController, withTransaction transaction: Pelpay.Transaction) -> Self
+  public func initialiseWithExistingAdvice(withEnvironment environment: Pelpay.Environment, withAdviceReference adviceReference: Swift.String, withClientId clientId: Swift.String, withClientSecret clientSecret: Swift.String, withController rootController: UIKit.UIViewController) -> Self
   public func withCallBack(callback: Pelpay.PelpaySdkCallback)
   @objc deinit
 }

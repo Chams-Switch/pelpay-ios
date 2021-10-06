@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Pelpay'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'This library will help you accept card and alternative payments in your iOS.'
   
     s.homepage         = 'git@github.com:Chams-Switch/pelpay-ios'

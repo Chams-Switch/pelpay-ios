@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		JIJDZggI8XTaXD3gvOBY/FFBsBg=
+		vJoKOQZ/+JNGM4uX1edBK3YF3M8=
 		</data>
 		<key>Headers/Pelpay-Swift.h</key>
 		<data>
-		ObsA/olWxmRlUfB3Ox2TVP+52gg=
+		5H4pOWHpXA5zIuMIYwE2QCAu4SE=
 		</data>
 		<key>Headers/Pelpay.h</key>
 		<data>
@@ -18,79 +18,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Eobz1xfSIWQorej/CFzSe8WogOA=
+		WbjoLV5Y8XYPipKewlnKLkIXvCE=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RPiTQ/SBMBGDDPZZUSx6jaEZmPQ=
+		6AqU9hbx+fxm+uQ/+90GIggV8jo=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XiAUJnBcqOlkTzWA+4uenu5Qesc=
+		nu3bZbY77rrk/9ZT73JVrjr4lqM=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fxChkhrEkTL5bJVdzcKqs6JnFcE=
+		bSfn6LBtcCx+Prm3FmsUcZHdPBs=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		RPiTQ/SBMBGDDPZZUSx6jaEZmPQ=
+		6AqU9hbx+fxm+uQ/+90GIggV8jo=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		XiAUJnBcqOlkTzWA+4uenu5Qesc=
+		nu3bZbY77rrk/9ZT73JVrjr4lqM=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		fxChkhrEkTL5bJVdzcKqs6JnFcE=
+		bSfn6LBtcCx+Prm3FmsUcZHdPBs=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vwaM9zM1UgMDtFYl2umhEiOjGqQ=
+		UUiz59Hh0lNULNFrg10TjM+hruY=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Kg1X1uDHm9ILkGFqLoGBC2jQXHs=
+		nN+HC52+zMQX3EK0a3IFkgqZXG8=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KMhJVg8zgyBjvxa/eFeK6p0cQTU=
+		NWjzmkx0YApZrohWky2d5jJGzgg=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftdoc</key>
 		<data>
-		vwaM9zM1UgMDtFYl2umhEiOjGqQ=
+		UUiz59Hh0lNULNFrg10TjM+hruY=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftinterface</key>
 		<data>
-		Kg1X1uDHm9ILkGFqLoGBC2jQXHs=
+		nN+HC52+zMQX3EK0a3IFkgqZXG8=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftmodule</key>
 		<data>
-		KMhJVg8zgyBjvxa/eFeK6p0cQTU=
+		NWjzmkx0YApZrohWky2d5jJGzgg=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GpM39GIKbyfQfrvqdQDW3xBrmLM=
+		7i0iWN8o1n4z1TscWKWX+Peoqrw=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yyK/QinFk4gamqk6VlzLNR6s0I0=
+		vOB6bZmJ+V3AaZUg+fDy++6sarQ=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z6OUlvA2TpgvPwwcFif4lM067cM=
+		27j99vx8Uf5g0+TCbzTgjgcFhkQ=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		GpM39GIKbyfQfrvqdQDW3xBrmLM=
+		7i0iWN8o1n4z1TscWKWX+Peoqrw=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		yyK/QinFk4gamqk6VlzLNR6s0I0=
+		vOB6bZmJ+V3AaZUg+fDy++6sarQ=
 		</data>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		z6OUlvA2TpgvPwwcFif4lM067cM=
+		27j99vx8Uf5g0+TCbzTgjgcFhkQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JIJDZggI8XTaXD3gvOBY/FFBsBg=
+			vJoKOQZ/+JNGM4uX1edBK3YF3M8=
 			</data>
 			<key>hash2</key>
 			<data>
-			lazCriOMYFIwLo52jpWNkH223d9shgyNvz8t3COPrMk=
+			1cT2u2OiKchQUfIxh/UqLreR55dTr4URN3BGiHYl8uw=
 			</data>
 		</dict>
 		<key>Headers/Pelpay-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ObsA/olWxmRlUfB3Ox2TVP+52gg=
+			5H4pOWHpXA5zIuMIYwE2QCAu4SE=
 			</data>
 			<key>hash2</key>
 			<data>
-			YIz61DqwOHqXH+JxesHGzldO3VA+0sqxnutE5m11u2g=
+			QeNQEXuWMnxPNX0XxpYksD7pIXP4M0DF5P55sHVNPQY=
 			</data>
 		</dict>
 		<key>Headers/Pelpay.h</key>
@@ -136,198 +136,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RPiTQ/SBMBGDDPZZUSx6jaEZmPQ=
+			6AqU9hbx+fxm+uQ/+90GIggV8jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8QgtmZINpJSjhJzSjkGT2YkPqCJcQ6tHj6X61QN8rsg=
+			KWKnZFvFItIqU8FFdRj0PVwIXo54/NqQ7gsZE61iLHs=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XiAUJnBcqOlkTzWA+4uenu5Qesc=
+			nu3bZbY77rrk/9ZT73JVrjr4lqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LyOOiipPoIMQ9gNW0R1lVW31z8e19vQ1NEZQdbMFL58=
+			DQIrATabbI17/9jmYE1HADtRCeUu7mkaLxEalQj4h7w=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fxChkhrEkTL5bJVdzcKqs6JnFcE=
+			bSfn6LBtcCx+Prm3FmsUcZHdPBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			wM3A6MUuLr9oxuhv2/dKrnw7hMO9bnY37140EusCG+0=
+			MQNMEzjXTkxZvKuyn3iAVGmwfr9EXnp3RUJTyNHz0GQ=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RPiTQ/SBMBGDDPZZUSx6jaEZmPQ=
+			6AqU9hbx+fxm+uQ/+90GIggV8jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8QgtmZINpJSjhJzSjkGT2YkPqCJcQ6tHj6X61QN8rsg=
+			KWKnZFvFItIqU8FFdRj0PVwIXo54/NqQ7gsZE61iLHs=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XiAUJnBcqOlkTzWA+4uenu5Qesc=
+			nu3bZbY77rrk/9ZT73JVrjr4lqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			LyOOiipPoIMQ9gNW0R1lVW31z8e19vQ1NEZQdbMFL58=
+			DQIrATabbI17/9jmYE1HADtRCeUu7mkaLxEalQj4h7w=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fxChkhrEkTL5bJVdzcKqs6JnFcE=
+			bSfn6LBtcCx+Prm3FmsUcZHdPBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			wM3A6MUuLr9oxuhv2/dKrnw7hMO9bnY37140EusCG+0=
+			MQNMEzjXTkxZvKuyn3iAVGmwfr9EXnp3RUJTyNHz0GQ=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwaM9zM1UgMDtFYl2umhEiOjGqQ=
+			UUiz59Hh0lNULNFrg10TjM+hruY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mNsSCs3U+G6d1Q9LoxrHv1K2jIFYXkn8L48yxSRsY/Y=
+			jTNcfP/aJphVPRgsRoH+YBoVixhUrP4PD73D4qy2UR4=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kg1X1uDHm9ILkGFqLoGBC2jQXHs=
+			nN+HC52+zMQX3EK0a3IFkgqZXG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fwcbYUo30d5OoVVw8lNfPB9t6P0zj1rdtbZRIjgWG00=
+			bhJo4FEwavQICDyYqHmZJkqPVT+ET1kpanpJPMu+jFw=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KMhJVg8zgyBjvxa/eFeK6p0cQTU=
+			NWjzmkx0YApZrohWky2d5jJGzgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			aaQCPEKHxyo1chZpKE4v95/HP17SNmhULyQQDifnDvc=
+			2uIDT48Ux9jCh+DnI8mxyEyzK0reReDLmdpwTntuhfg=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwaM9zM1UgMDtFYl2umhEiOjGqQ=
+			UUiz59Hh0lNULNFrg10TjM+hruY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mNsSCs3U+G6d1Q9LoxrHv1K2jIFYXkn8L48yxSRsY/Y=
+			jTNcfP/aJphVPRgsRoH+YBoVixhUrP4PD73D4qy2UR4=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kg1X1uDHm9ILkGFqLoGBC2jQXHs=
+			nN+HC52+zMQX3EK0a3IFkgqZXG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fwcbYUo30d5OoVVw8lNfPB9t6P0zj1rdtbZRIjgWG00=
+			bhJo4FEwavQICDyYqHmZJkqPVT+ET1kpanpJPMu+jFw=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KMhJVg8zgyBjvxa/eFeK6p0cQTU=
+			NWjzmkx0YApZrohWky2d5jJGzgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			aaQCPEKHxyo1chZpKE4v95/HP17SNmhULyQQDifnDvc=
+			2uIDT48Ux9jCh+DnI8mxyEyzK0reReDLmdpwTntuhfg=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GpM39GIKbyfQfrvqdQDW3xBrmLM=
+			7i0iWN8o1n4z1TscWKWX+Peoqrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			FfR5lHga/+ZE2M/NoVcdL8mo59xkobbagLbR5WgFeo4=
+			sEhHXPAtTg8/PJtiGOsq2As53wayKDSEoWS4uEv7NOs=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yyK/QinFk4gamqk6VlzLNR6s0I0=
+			vOB6bZmJ+V3AaZUg+fDy++6sarQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			c7lECAKNwtnlr8LPW4nb+my/8RH94JLsVk7DCFgKKww=
+			VCp534nMz8UFuynSLXIJ3NGPaWqLJHKioi35G5/0pDE=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z6OUlvA2TpgvPwwcFif4lM067cM=
+			27j99vx8Uf5g0+TCbzTgjgcFhkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			f/D+0m/AIhxHfNpJwbp1m3VVale6MHcYd54sm4l5Q0o=
+			Zc9oEvW1flzYS/nSDmQt0Jxz3uQJ/kHPOMOIpr364PQ=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GpM39GIKbyfQfrvqdQDW3xBrmLM=
+			7i0iWN8o1n4z1TscWKWX+Peoqrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			FfR5lHga/+ZE2M/NoVcdL8mo59xkobbagLbR5WgFeo4=
+			sEhHXPAtTg8/PJtiGOsq2As53wayKDSEoWS4uEv7NOs=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yyK/QinFk4gamqk6VlzLNR6s0I0=
+			vOB6bZmJ+V3AaZUg+fDy++6sarQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			c7lECAKNwtnlr8LPW4nb+my/8RH94JLsVk7DCFgKKww=
+			VCp534nMz8UFuynSLXIJ3NGPaWqLJHKioi35G5/0pDE=
 			</data>
 		</dict>
 		<key>Modules/Pelpay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z6OUlvA2TpgvPwwcFif4lM067cM=
+			27j99vx8Uf5g0+TCbzTgjgcFhkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			f/D+0m/AIhxHfNpJwbp1m3VVale6MHcYd54sm4l5Q0o=
+			Zc9oEvW1flzYS/nSDmQt0Jxz3uQJ/kHPOMOIpr364PQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
