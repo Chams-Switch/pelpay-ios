@@ -1,6 +1,18 @@
 # Pelpay iOS SDK
-Welcome to Pelpay's iOS SDK. This library will help you accept card and alternative payments in your Android app.
-**The Pelpay Android SDK permits a deployment target of iOS version 9.0 or higher**.
+Welcome to Pelpay's iOS SDK. This library will help you accept card and alternative payments in your iOS app.
+
+## Features
+- Highly customizable: Change look & feel of the SDK to suit your brand, set your own logo
+- Multiple payment methods
+- 3D-Secure & many more
+
+| Pay VIA Credit Card | Pay VIA Bank Payment | Pay VIA Bank Transfer |
+| ------------- | ------------- | ------------- |
+| <img src="images/pelpay_card_payment.gif"  />  | <img src="images/pelpay_bank_payment.gif"  />  |<img src="images/pelpay_bank_transfer.gif"  />|
+
+
+**Important: **
+**The Pelpay iOS SDK permits a deployment target of iOS version 9.0 or higher**.
 ## Supported Payment Methods
 - Credit Card
 - Bank Payment
@@ -20,7 +32,7 @@ end
 
 Select **File** → **Swift Packages** → **Add Package Dependency**…. Paste the Git Repository URL: **https://github.com/Chams-Switch/pelpay-ios.git**. The click **Next**.
 
-Depending on your GitHub settings, you may need to authenticate your SSH key here. Then, under Rules, make sure Up to Next Major is selected for the version 1.0.1. Click Next.
+Depending on your GitHub settings, you may need to authenticate your SSH key here. Then, under Rules, make sure Up to Next Major is selected for the version 1.0.2. Click Next.
 
 If you want to learn more about major and minor versioning check out semver.org. After Xcode fetches the package, ensure the Pelpay product is selected and added to the project target target. Then select Finish.
 
