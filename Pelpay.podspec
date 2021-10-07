@@ -5,11 +5,12 @@ Pod::Spec.new do |s|
   
     s.homepage         = 'git@github.com:Chams-Switch/pelpay-ios'
     s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
-    s.author           = { 'Pelpay' => 'david3ti@gmail.com' }
-    s.source           = { :git => 'https://github.com/Chams-Switch/pelpay-ios.git', :tag => "#{s.version}" }
+    s.author           = { 'David Eti' => 'david3ti@gmail.com' }
+    s.source       = { :git => "https://github.com/Chams-Switch/pelpay-ios.git", :tag => "#{s.version}" }
   
     s.ios.deployment_target = '9.0'
     s.swift_version = '5.0'
-  
-    s.source_files = 'Sources/**/*'
+    s.vendored_frameworks = 'Sources/Pelpay.xcframework'
+    s.requires_arc = true
+    s.xcconfig     = { "ENABLE_BITCODE" => "NO" }
   end
